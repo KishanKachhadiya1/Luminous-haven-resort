@@ -1,0 +1,73 @@
+/* contactForm css starts  */
+.contactForm {
+  background-color: var(--ex-light);
+}
+.contactForm form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
+  background-color: var(--white);
+  padding: 40px;
+  max-width: 991px;
+  margin: 40px auto 0;
+  box-shadow: 0 0 0 5px #fff9f5, 0 0 0 10px var(--white);
+}
+.contactForm form label {
+  color: var(--secondary);
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: block;
+}
+.contactForm form input,
+.contactForm form textarea {
+  border: 1px solid #f5ece1;
+  padding: 10px 15px;
+  width: 100%;
+  outline: 0;
+  color: var(--secondary);
+  background-color: var(--white);
+}
+.contactForm form .textarea {
+  grid-column: span 2;
+}
+.contactForm form .textarea textarea {
+  resize: unset;
+}
+.contactForm .submitBtn {
+  padding: 10px 30px;
+  color: var(--secondary);
+  font-size: 14px;
+  border: 1px solid #f5ece1;
+  outline: 1px solid var(--white);
+  outline-offset: -3px;
+  background-color: var(--ex-light);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contactForm .submitBtn:hover {
+  outline-offset: 3px;
+  outline: 1px solid var(--ex-light);
+}
+/* faqs css starts  */
+.faqs {
+  padding-bottom: 0;
+}
+.faqs .faqsMain {
+  max-width: 991px;
+  width: 100%;
+  margin: 40px auto 0;
+}
+.faqs .faqsMain .faqsContent {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--light);
+  padding-bottom: 20px;
+}
+.faqs .faqsMain h4 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+.faqs .faqsMain p {
+  color: var(--paragraph);
+  line-height: 26px;
+}

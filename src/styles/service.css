@@ -1,0 +1,106 @@
+/* service css starts  */
+.service {
+  background-color: var(--ex-light);
+}
+.service h2 {
+  margin-bottom: 40px;
+}
+.service .serviceMain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.service .serviceMain .serviceCard {
+  position: relative;
+  padding: 65px 20px 20px;
+  background-color: var(--white);
+  margin-top: 50px;
+}
+.service .serviceMain .serviceCard .serviceImg {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 6px solid var(--white);
+  background-color: var(--ex-light);
+}
+.service .serviceMain .serviceCard .serviceImg img {
+  width: 50px;
+  height: 50px;
+}
+.service .serviceMain .serviceCard .serviceContent h3 {
+  color: var(--secondary);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.service .serviceMain .serviceCard .serviceContent p {
+  text-align: center;
+  color: var(--paragraph);
+  line-height: 26px;
+}
+/* menu css starts  */
+.menu {
+  padding-bottom: 0;
+}
+.menu h2 {
+  margin-bottom: 40px;
+}
+.menu .menuMain {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 40px;
+  border: 1px solid var(--light);
+}
+.menu .menuMain .menuCard {
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--ex-light);
+}
+.menu .menuMain .menuCard .menuItem {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .menuMain .menuCard .menuItem > div {
+  padding-right: 40px;
+}
+.menu .menuMain .menuCard .menuItem h4 {
+  color: var(--secondary);
+  margin-bottom: 10px;
+}
+.menu .menuMain .menuCard .menuItem p {
+  color: var(--paragraph);
+  line-height: 20px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.menu .menuMain .menuCard .menuItem span {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--ex-light);
+  border-radius: 50%;
+  color: var(--secondary);
+}
+@media (max-width: 767px) {
+  .service .serviceMain {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .menu .menuMain {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+@media (max-width: 575px) {
+  .service .serviceMain {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}

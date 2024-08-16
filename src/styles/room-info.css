@@ -1,0 +1,110 @@
+/* roomInfo css starts  */
+.roomInfo {
+  background-color: var(--ex-light);
+}
+.roomInfo .roomInfoImg {
+  max-width: 700px;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.roomInfo h2,
+.roomFacilities h2,
+.contactUs h2,
+.contactForm h2,
+.faqs h2,
+.video h2,
+.testimonial h2,
+.service h2,
+.menu h2 {
+  color: var(--primary);
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-align: center;
+}
+.roomInfo p {
+  color: var(--paragraph);
+  line-height: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.roomInfo .roomInfoImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  outline: 2px solid var(--ex-light);
+  outline-offset: -8px;
+}
+/* roomFacilities css starts  */
+.roomFacilities {
+  padding-bottom: 0;
+}
+.roomFacilities table {
+  border-collapse: collapse;
+  border-color: var(--secondary);
+  margin: 0 auto;
+  border: 1px solid var(--ex-light);
+  width: 100%;
+  margin: 0;
+  overflow: auto;
+}
+.roomFacilities table th {
+  color: var(--secondary);
+  font-size: 16px;
+  text-align: left;
+}
+.roomFacilities table td {
+  font-size: 14px;
+  color: var(--paragraph);
+}
+.roomFacilities table th,
+.roomFacilities table td {
+  padding: 10px 20px;
+}
+.roomFacilities table tr td:first-child {
+  font-weight: 700;
+}
+.roomFacilities table tr:nth-child(even) {
+  background-color: var(--ex-light);
+}
+/* roomPhotos css starts  */
+.roomPhotos {
+  padding-bottom: 0;
+}
+.roomPhotos h2 {
+  color: var(--primary);
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-align: center;
+}
+.roomPhotos .photoGallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.roomPhotos .photoGallery .galleryImg:nth-child(2),
+.roomPhotos .photoGallery .galleryImg:nth-child(4) {
+  grid-column: span 2;
+}
+.roomPhotos .photoGallery .galleryImg img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .roomPhotos .photoGallery {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .roomPhotos .photoGallery .galleryImg:nth-child(2), .roomPhotos .photoGallery .galleryImg:nth-child(4) {
+    grid-column: span 1 !important;
+  }
+  .roomFacilities table {
+    display: block !important;
+  }
+}
+@media (max-width: 575px) {
+  .roomPhotos .photoGallery {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
